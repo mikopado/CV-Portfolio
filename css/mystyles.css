@@ -1,0 +1,539 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1.5px;
+	color: #fff;
+}
+
+/***********************************
+			HEADER
+
+*********************************/
+/*Navigation-bar*/
+.navbar.navbar-inverse.navbar-fixed-top {
+	background-color: transparent;
+	opacity: .9;
+	border-width: 0px;
+    position: fixed;
+	transition: all 2s ease-in-out;
+	-webkit-transition: all 2s ease-in-out;
+    
+}
+div.navbar-header{
+	display: flex;
+	align-items: baseline;
+}
+/*Menu of navigation bar*/
+#nav-list > li > a, #nav-list > li > a:focus {
+    color:#fff;
+ 	/*vertical-align: middle;*/
+ 	background-color: transparent; 	
+ }
+ #nav-list > li > a:hover{
+	background-color: transparent;
+	font-weight: bold;
+	color: #FFD700;
+}
+
+header div.container-fluid{
+	margin-left: 110px;
+	margin-right: 30px;
+}
+/*Logo on the upper left corner*/
+#logonav {
+	font-family: 'Consolas', monospace;
+	font-weight: bold;
+	font-style: italic;
+	/*margin-bottom: 10px;
+	margin-top: 10px;*/
+	color: #FFD700;
+	font-size: 1.1em;    
+}
+#logonav:hover {
+	font-size: 1.3em;
+}
+#initials {
+	color: #fff;
+	font-size: 1.2em;
+	margin-left: 3px;
+}
+
+/***********************************
+			HOME PAGE
+
+*********************************/
+#home div.row div.col-xs-11 {
+	position: relative;
+	top: 300px;
+}
+/*Welcoming message in the centre of page*/
+#home h1 {
+	font-size: 4em;	
+}
+#home article {
+	font-size: 1.5em;
+}
+
+#home{
+    width: 100%;
+    height: 700px;
+    background: url('../images/my-desk-background-image.JPG') no-repeat;    
+    background-size: cover;
+}
+#home div.text-center{
+    position: relative;    
+    top: 65%;    
+}
+#home div.text-center a{
+    color:#fff;
+    text-decoration: none;    
+}
+/***********************************
+			ABOUT SESSION
+
+*********************************/
+#about {
+	color: #000;	
+}
+/*Title of Session: About me, My portfolio, contact me*/
+h2 {
+	margin-bottom: 0px;
+	margin-top: 100px;
+	color: #000;
+	
+}
+/*Line under Tile of sessions*/
+hr {
+	width: 5%;
+	border-width: 2px;
+	float: left;
+	border-color: #FFD700;
+}
+
+/*Text of About me*/
+#description-about {
+	word-spacing: 2px;
+	text-align: justify;	
+	line-height: 250%;	
+}
+
+#description-about section p:nth-child(1)  {
+	margin-bottom: 30px;
+}
+
+/*Row that includes text and photo*/
+#about div.row div.row {
+	margin-top: 100px;
+	margin-bottom: 50px;
+} 
+/*#about.container-fluid {
+	margin-top: 80px;
+}*/
+/***********************************
+		WORK EXPERIENCE 
+			&&
+		EDUCATION SESSION
+
+*********************************/
+/*#work, #education{
+	margin-top: 100px;
+	
+}*/
+#education{
+	background-color: #f8f8ff;
+}
+#work div.col-md-2, #education div.col-md-2{
+	display: flex;
+	flex-direction: column;
+}
+.work-sections, .edu-sections{
+	color: black;	
+	padding: 20px;
+	border-radius: 2%;
+	background-color: #AFEEEE;
+	line-height: 220%;	
+	text-align: justify;
+	position: absolute;
+	top: 0;
+	
+}
+.year{
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+.work-sections p:nth-child(4), .edu-sections p:nth-child(4){
+	margin-top: 15px;
+}
+.headline{
+	font-style: italic;
+}
+
+#work div.row div.row, #education div.row.row {
+	margin-top: 100px;
+	margin-bottom: 50px;
+} 
+#education h2{
+	margin-top: 0px;
+}
+.edu-btn, .work-btn{
+	width: 100%;
+	height: 70px;
+	margin-bottom: 40px;
+	background-color: #008B8B;
+    border: none;   
+    box-shadow: 5px 5px 2px #888888; 
+    color: white;
+	
+}
+.edu-btn:hover, .work-btn:hover, .edu-btn:focus, .work-btn:focus{
+	color: white;
+	border-color: transparent;
+	outline: none!important;
+}
+
+
+/***********************************
+		MY PROJECTS SESSION
+
+*********************************/
+
+#my-projects div.row div.row{
+	margin-top: 100px;
+	
+}
+#my-projects div.row{
+	margin-bottom:50px;
+}
+#my-projects button{
+	width: 100%;
+	height: 200px;
+}
+#my-projects a{
+	text-decoration: none;
+	 
+}
+#my-projects a > div{
+	box-shadow: 10px 10px 5px #888888;
+}
+#my-projects div.col-xs-12{
+	border: .5px solid gray;	
+	height: 250px;
+	background-size: 100% 100%;
+	display: flex;
+	color: transparent;	
+	align-items: flex-start;
+	justify-content: space-between;	
+	
+}
+#my-projects i, #my-projects img{
+	font-size: 1.3vw;
+	margin-top: 10px;
+}
+#my-projects section{
+	display: flex;
+	flex-direction: column;
+}
+
+#my-projects div.col-xs-12:hover{
+	filter: brightness(80%);
+	/*opacity: .7;*/
+	color: white;
+	transition: all 1s ease-in-out;
+	font-size: 1.5em;
+}
+#my-projects span{	
+	align-self: center;	
+	margin: auto; 	
+	font-weight: bold;
+}
+#web{
+	background: url('../images/Web-apps.jpg');
+}
+#python {
+	background: url('../images/python.jpg');
+}
+#csharp{
+	background: url('../images/csharp.jpg');
+}
+#mobile{
+	background: url('../images/mobile-apps.jpg');
+	
+}
+
+
+/***********************************
+		CONTACT ME SESSION
+
+*********************************/
+/*Whole session*/
+#contact {	
+	background: url("../images/gray-background.jpg") no-repeat; 	
+    background-size: cover;
+}
+/*Contact Me text*/
+div#contact-title h2 {
+	color: #fff;
+}
+/*Entire page except title*/
+#contact-content {
+	margin-top: 120px;	
+	margin-right: 0px;
+}
+
+/*Contact info text*/
+#info {
+	display: block;
+	margin-bottom: 30px;
+	font-size: 1.4em;
+
+}
+/*Leave me a message text*/
+ #message-title {
+ 	display: block;
+	margin-bottom: 45px;
+	font-size: 1.5em;
+ }
+ /*Icons of mail and phone*/
+.glyphicon {
+	margin: 0px 20px 40px 10px; 
+	opacity: .8;	
+}
+/*phone number and email text*/
+#phone-number, #email-address {
+	white-space: pre;
+	font-size: 1.1em;
+}
+
+/*LEAVE ME A MESSAGE*/
+/*Text box for name email and message*/
+input, textarea {
+	margin-bottom: 20px;	
+}
+input.btn.btn-primary{
+    margin-right: 30px;
+}
+
+/*****************
+
+	FOOT SESSION
+
+*****************/
+
+
+/*Linkedin and github icons*/
+a.btn-linkedin, a.btn-github {
+	margin-right: 50px;
+}
+/*Area that includes all the social icons*/
+footer > div.text-center {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+footer {
+	padding: 0;
+}
+/*Codepen icon*/
+#codepen, #github {	
+	color: #000;	
+	margin-left: 70px;	
+}
+#linkedin{
+    color: #4d94ff;
+}
+#codepen, #github, #linkedin{
+    text-decoration: none;
+}
+/*The writing at very bottom*/
+.panel-footer > p {	
+	color: #000;
+	margin-top: 10px;
+}
+
+
+
+
+
+@media(max-width: 767px) {
+	body{
+		padding-top: 50px;
+	}
+    /*HEADER */
+	header div.container-fluid{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.navbar-header button.navbar-toggle {
+		border-color: #fff;		
+	}	
+	div.navbar-header{
+		display: block;
+	}
+	
+	#logonav {
+		margin: 5px 0px 0px 15px;
+		font-size: 1em;				
+	}	
+	#initials {
+		font-size: 1.1em;
+	}
+	#logonav:hover {
+		font-size: 1.2em;
+	}
+	div#menu-collapse.in{
+		overflow: hidden;
+	}
+	.navbar.navbar-inverse.navbar-fixed-top {
+		background-color: #1a1a1a;	
+		opacity: 1.0;
+        margin-bottom: 0px;        
+	}	
+    #nav-list > li > a:hover{
+        background-color: gray;        
+    }
+    /*HOME PAGE*/
+	
+    #home h1 {
+	    font-size: 30px;	
+    }
+    #home article {
+        font-size: 1em;
+    }
+    #home{  
+        height: 500px;                  
+        background-size: 100% 100%;
+    }
+    #home div.row div.col-xs-11 {	
+        position: relative;
+	    top: 200px;
+    }
+    /*ABOUT SESSION*/
+	
+	#description-about {	
+		margin-bottom: 20px;       
+        word-spacing: .5px;			
+	}	
+	h2 {				
+		font-size: 2.2em;
+    }
+	hr{
+		width: 15%;
+	}
+
+	/*WORK AND EDUCATION*/
+	.work-sections, .edu-sections{
+		background: none;
+		position: static;
+		padding: 0px;
+	}
+
+	/*PROJECTS*/
+	div#web{
+		margin-top: 80px;
+		margin-bottom: 50px;
+	}
+	#my-projects div.row div.row{
+		margin-top: 50px;
+	}
+	div#csharp{
+		margin-bottom: 50px;
+	}
+	#my-projects i{
+		font-size: 5vw;
+	}
+    /*CONTACT SESSION*/
+	a.visible-xs {
+		text-decoration: none;			
+	}	
+	#call-btn .glyphicon.glyphicon-earphone {		
+		margin-bottom: 5px;
+	}
+    #email-address{
+        font-size: .9em;      
+    }
+    .glyphicon {
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+    
+	/*button for calling phone number*/
+	#call-btn > a {		
+		color: #fff;
+		font-size: 1em;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		border: 2px solid #555;
+	    background-color: #f6b319;	   
+	}
+
+	/*Line that separates Contact info from leave me a message*/
+	hr.visible-xs {
+		width: 50%;
+		border-color: #fff;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-bottom: 60px;
+		margin-top: 60px;
+	}
+	/*Align every text inside contact info and leave a message sections in the center*/
+	#contact div.row div.row .col-xs-12 {
+		text-align: center;
+	}
+    
+	#contact {
+		margin-bottom: 20px;
+	}
+	div.flex-container{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	input.btn.btn-primary, input.btn.btn-danger{
+		margin-right: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	/*FOOTER*/
+    #github, #codepen{
+        margin-left: 30px;       
+    }
+    .panel-footer{
+        font-size: .8em;
+    }
+    
+}
+@media(min-width: 768px) and (max-width: 991px){
+	#nav-list > li {
+		margin-right: 0px;
+		margin-left: 0px;
+		padding:0px;
+		font-size: .9em;
+	}
+	#logonav{
+		font-size: .8em;
+		margin-right: 0px;
+		margin-left: 10px;
+	}
+	#logonav:hover {
+		font-size: 1.1em;
+	}
+	header div.container-fluid{		
+		margin-left: 50px;		
+		margin-right: 20px;
+	}
+	#email-address, #phone-number{
+		font-size: .9em;
+	}
+
+	/*WORK AND EDUCATION*/
+	.work-btn, .edu-btn{
+		font-size: .8em;
+		padding: 0px;
+	}
+	.work-sections, .edu-sections{
+		line-height: 130%;
+		
+	}
+
+}

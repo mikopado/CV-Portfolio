@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lan="en">  
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Michele Ercolino, Web App, JavaScript, HTML, CSS">
+	<meta name="author" content="Michele Ercolino">
+	<title>Michele Ercolino's Web Apps</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/projectstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 	
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+</head>
+<body>
+<!-- 	HEADER - NAVIGATION BAR -->
+	<header>
+		<nav class="navbar navbar-inverse navbar-top">
+		<div class="container-fluid">
+        	
+				<div class="navbar-header">
+				<a id="logonav" href="../cv-portfolio.html#home" class="navbar-brand navbar-text"><span>&lt;&#47;&gt;<span id="initials">ME</span></span></a> 	
+
+					<!--Code to handle the nav-bar and make it collapsable for small size. Take from an online course-->
+					<button id="navbarToggle" type="button" class="navbar-toggle menu-active" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div> <!-- End of navbar header -->
+
+				<div class="collapse navbar-collapse" id="menu-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#home">Home</a></li>
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#about">About</a></li>
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#work">Work Experience</a></li>
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#education">Education</a></li>
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#my-projects">Projects</a></li>
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#contact">Contacts</a></li>
+					</ul>
+				</div>
+          	
+		</div> <!-- End of Container -->
+		</nav>
+	</header> <!--  END OF HEADER --> 
+
+    <div id="webapps" class="container-fluid">
+        <div class="row">
+        <div class="col-xs-offset-1 col-xs-10 col-xs-offset-1"><h1>Web Apps</h1><hr>	    
+        <div class="row">
+            <div class="col-xs-12 col-sm-5"><iframe name="wiki" src="https://mikopado.github.io/Free-Code-Camp-Challenges/WikipediaViewer/"></iframe><section><button class="btn btn-info" onclick="window.open('https://codepen.io/mikopado/pen/BQgmeK')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button><button id="wiki" class="btn btn-info"><i class="fa fa-window-maximize" aria-hidden="true"></i>Open App</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-6"><p>Wikipedia viewer which retrieves JSON data from Wikipedia API through AJAX call methods. You can search for anything you need. Autocomplete implemented too. App developed for Free Code Camp Challenges.</p></div>
+	    </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-5"><iframe name="weather" src="https://mikopado.github.io/Free-Code-Camp-Challenges/ShowLocalWeather/"></iframe><section><button class="btn btn-info" onclick="window.open('https://codepen.io/mikopado/pen/dOmxpO')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button><button id="weather" class="btn btn-info"><i class="fa fa-window-maximize" aria-hidden="true"></i>Open App</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-6"><p>Weather app which shows the weather for your current shared location. Using CORS for AJAX requests to OpenWeatherMap API. Background image will be adapted based on the current weather and daytime. App developed for Free Code Camp Challenges.</p></div>
+	    </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-5"><iframe name="pomo" src="https://mikopado.github.io/Free-Code-Camp-Challenges/PomodoroClock/"></iframe><section><button class="btn btn-info" onclick="window.open('https://codepen.io/mikopado/pen/QdGOPj');"><i class="fa fa-code" aria-hidden="true"></i>View Code</button><button id="pomo" class="btn btn-info"><i class="fa fa-window-maximize" aria-hidden="true"></i>Open App</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-6"><p>Based on Pomodoro technique this app helps to manage the time for efficiently complete tasks, breaking down work into intervals. Allows to change the work time length and break length from their default values. App developed for Free Code Camp Challenges.</p></div>
+	    </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-5"><iframe name="calculator" src="https://mikopado.github.io/Free-Code-Camp-Challenges/Calculator/"></iframe><section><button class="btn btn-info" onclick="window.open('https://codepen.io/mikopado/pen/bgVjYr')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button><button id="calculator" class="btn btn-info"><i class="fa fa-window-maximize" aria-hidden="true"></i>Open App</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-6"><p>Simple calculator app made using JQuery for user interaction and Bootstrap for stylizing it. App developed for Free Code Camp Challenges.</p></div>
+	    </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-5"><iframe name="quote" src="https://mikopado.github.io/Free-Code-Camp-Challenges/randomQuoteMachine/"></iframe><section><button class="btn btn-info" onclick="window.open('https://codepen.io/mikopado/pen/rWJNYE')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button><button id="quote" class="btn btn-info"><i class="fa fa-window-maximize" aria-hidden="true"></i>Open App</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-6"><p>App that displays several quotes of famous people retrieve from Forismatic API using CORS for JQuery-AJAX requests. Using HTML and Bootstrap framework for CSS. App developed for Free Code Camp Challenges.</p></div>
+	    </div>        
+        </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>	
+    <script src="js/project-script.js"></script>
+</body>
+</html>

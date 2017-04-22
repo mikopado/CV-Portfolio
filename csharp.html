@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lan="en">  
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Michele Ercolino, C#">
+	<meta name="author" content="Michele Ercolino">
+	<title>Michele Ercolino's C# Apps</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/projectstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 	
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+</head>
+<body>
+<!-- 	HEADER - NAVIGATION BAR -->
+	<header>
+		<nav class="navbar navbar-inverse navbar-top">
+		<div class="container-fluid">
+        	
+				<div class="navbar-header">
+				<a id="logonav" href="../cv-portfolio.html#home" class="navbar-brand navbar-text"><span>&lt;&#47;&gt;<span id="initials">ME</span></span></a> 	
+
+					<!--Code to handle the nav-bar and make it collapsable for small size. Take from an online course-->
+					<button id="navbarToggle" type="button" class="navbar-toggle menu-active" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div> <!-- End of navbar header -->
+
+				<div class="collapse navbar-collapse" id="menu-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#home">Home</a></li>
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#about">About</a></li>
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#work">Work Experience</a></li>
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#education">Education</a></li>
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#my-projects">Projects</a></li>
+						<li class="navbar-text text-center"><a href="../cv-portfolio.html#contact">Contacts</a></li>
+					</ul>
+				</div>
+          	
+		</div> <!-- End of Container -->
+		</nav>
+	</header> <!--  END OF HEADER --> 
+
+    <div id="csharp" class="container-fluid">
+        <div class="row">
+        <div class="col-xs-offset-1 col-xs-10 col-xs-offset-1"><h1>C# Apps</h1><hr>	    
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-2 text-center"><div class="app-img" style="background: url('../images/geophy.jpg') no-repeat; background-size: 100% 100%;"></div><section><button class="btn btn-info" onclick="window.open('https://github.com/mikopado/GeoPhy-data-converter-tool/tree/master/GeoPhyGPS')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-8 col-md-offset-2 col-md-8"><p>GeoPhy data converter tool. App which converts GPS data acquired for 2D Resistivity and Seismic Refraction surveys to a cleaner and tidier structure ready to be exported in excel files or AutoCAD file. App developed to improve and simplify data collection for the mentioned geophysical surveys.</p></div>
+	    </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-2 text-center"><div class="app-img" style="background: url('../images/oop-assignment.jpg') no-repeat; background-size: 100% 100%;"></div><section><button class="btn btn-info" onclick="window.open('https://github.com/mikopado/OOP-Assignment/tree/master/OOPAssignment/OOPAssignment')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-8 col-md-offset-2 col-md-8"><p>App that allows to collect data for a college, inputting students and lecturers information in a sort of a database. Using GUI with WinForm. App developed in object-oriented programming modules for Certificate in Programming.</p></div>
+	    </div>           
+        </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>	
+    <script src="js/project-script.js"></script>
+</body>
+</html>
