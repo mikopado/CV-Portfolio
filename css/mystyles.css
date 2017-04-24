@@ -283,7 +283,7 @@ div#contact-title h2 {
 	font-size: 1.5em;
  }
  /*Icons of mail and phone*/
-.fa.fa-envelope, .fa.fa-phone {
+#email-address i.fa.fa-envelope, #phone-number i.fa.fa-phone {
 	margin: 0px 20px 40px 10px; 
 	opacity: .8;	
 }
