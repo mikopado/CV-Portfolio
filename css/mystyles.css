@@ -1,3 +1,186 @@
+/*VERY SMALL SCREEN (MOBILE SIZE)*/
+@media(max-width: 767px) {
+	/*Giving padding to body to push down the background image below navigation bar as navbar is fixed and so out of normal flow*/
+	body{
+		padding-top: 50px;
+	}
+    /*HEADER */
+	header div.container-fluid{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.navbar-header button.navbar-toggle {
+		border-color: #fff;		
+	}	
+	div.navbar-header{
+		display: block;
+	}	
+	#logonav {
+		margin: 5px 0px 0px 15px;
+		font-size: 1em;				
+	}	
+	#initials {
+		font-size: 1.1em;
+	}
+	#logonav:hover {
+		font-size: 1.2em;
+	}
+	/*Hides the scroolbar to navigation menu*/
+	div#menu-collapse.in{
+		overflow: hidden;
+	}
+	nav.navbar.navbar-inverse.navbar-fixed-top {
+		background-color: #1a1a1a;	
+		opacity: 1.0;
+        margin-bottom: 0px;        
+	}	
+    #nav-list > li > a:hover{
+        background-color: gray;        
+    }
+    /*HOME PAGE*/	
+    #home h1 {
+	    font-size: 30px;	
+    }
+    #home article {
+        font-size: 1em;
+    }
+    #home{  
+        height: 500px;                  
+        background-size: 100% 100%;
+    }
+    #home div.row div.col-xs-11 {	
+        position: relative;
+	    top: 200px;
+    }
+    /*ABOUT SESSION*/	
+	#description-about {	
+		margin-bottom: 20px;       
+        word-spacing: .5px;			
+	}	
+	h2 {				
+		font-size: 2.2em;
+    }
+	hr{
+		width: 15%;
+	}
+	/*WORK AND EDUCATION*/
+	/*Making the work and education section display one below another */
+	.work-sections, .edu-sections{
+		background: none;
+		position: static;
+		padding: 0px;
+	}
+	/*PROJECTS*/
+	div#web{
+		margin-top: 80px;
+		margin-bottom: 50px;
+	}
+	#my-projects div.row div.row{
+		margin-top: 50px;
+	}
+	div#csharp{
+		margin-bottom: 50px;
+	}
+	#my-projects i{
+		font-size: 5vw;
+	}
+    /*CONTACT SESSION*/
+	a.visible-xs {
+		text-decoration: none;			
+	}	
+	#call-btn i.fa.fa-phone {		
+		margin-bottom: 5px;
+	}
+    #email-address{
+        font-size: .9em;      
+    }
+    i.fa.fa-envelope, i.fa.fa-phone {
+        margin-right: 10px;
+        margin-left: 0px;
+    }    
+	/*button for calling phone number*/
+	#call-btn > a {		
+		color: #fff;
+		font-size: 1em;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		border: 2px solid #555;
+	    background-color: #f6b319;	   
+	}
+	/*Line that separates Contact info from leave me a message*/
+	hr.visible-xs {
+		width: 50%;
+		border-color: #fff;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-bottom: 60px;
+		margin-top: 60px;
+	}
+	/*Align every text inside contact info and leave a message sections in the center*/
+	#contact div.row div.row .col-xs-12 {
+		text-align: center;
+	}    
+	#contact {
+		margin-bottom: 20px;
+	}
+	/*Allows send message and reset message buttonto be displayed vertically using flexbox*/
+	div.flex-container{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}	
+	input.btn.btn-primary, input.btn.btn-danger{
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+	/*FOOTER*/
+    #github, #codepen{
+        margin-left: 30px;       
+    }
+    .panel-footer{
+        font-size: .8em;
+    }
+    
+}
+
+/*SMALL SCREEN SIZE (TABLET SIZE)*/
+@media(min-width: 768px) and (max-width: 991px){
+	/*Correcting the position of the elements in the menu list to fit them in one line as in the desktop screen*/
+	ul#nav-list > li {
+		margin-right: 0px;
+		margin-left: 0px;
+		padding:0px;
+		font-size: .9em;
+	}
+	a#logonav{
+		font-size: .8em;
+		margin-right: 0px;
+		margin-left: 10px;
+	}
+	#logonav:hover {
+		font-size: 1.1em;
+	}
+	header div.container-fluid{		
+		margin-left: 0px;		
+		margin-right: 20px;
+	}	
+	/*WORK AND EDUCATION*/
+	.work-btn, .edu-btn{
+		font-size: .8em;
+		padding: 0px;
+	}
+	.work-sections, .edu-sections{
+		line-height: 130%;		
+	}
+	/*CONTACT SESSION*/
+	#email-address, #phone-number{
+		font-size: .9em;
+	}
+
+
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 1.5px;
@@ -333,185 +516,4 @@ footer > div.text-center {
 .panel-footer > p {	
 	color: #000;
 	margin-top: 10px;
-}
-/*SMALL SCREEN SIZE (TABLET SIZE)*/
-@media(min-width: 768px) {
-	/*Correcting the position of the elements in the menu list to fit them in one line as in the desktop screen*/
-	ul#nav-list > li {
-		margin-right: 0px;
-		margin-left: 0px;
-		padding:0px;
-		font-size: .9em;
-	}
-	a#logonav{
-		font-size: .8em;
-		margin-right: 0px;
-		margin-left: 10px;
-	}
-	#logonav:hover {
-		font-size: 1.1em;
-	}
-	header div.container-fluid{		
-		margin-left: 0px;		
-		margin-right: 20px;
-	}	
-	/*WORK AND EDUCATION*/
-	.work-btn, .edu-btn{
-		font-size: .8em;
-		padding: 0px;
-	}
-	.work-sections, .edu-sections{
-		line-height: 130%;		
-	}
-	/*CONTACT SESSION*/
-	#email-address, #phone-number{
-		font-size: .9em;
-	}
-
-
-}
-/*VERY SMALL SCREEN (MOBILE SIZE)*/
-@media(max-width: 767px) {
-	/*Giving padding to body to push down the background image below navigation bar as navbar is fixed and so out of normal flow*/
-	body{
-		padding-top: 50px;
-	}
-    /*HEADER */
-	header div.container-fluid{
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-	.navbar-header button.navbar-toggle {
-		border-color: #fff;		
-	}	
-	div.navbar-header{
-		display: block;
-	}	
-	#logonav {
-		margin: 5px 0px 0px 15px;
-		font-size: 1em;				
-	}	
-	#initials {
-		font-size: 1.1em;
-	}
-	#logonav:hover {
-		font-size: 1.2em;
-	}
-	/*Hides the scroolbar to navigation menu*/
-	div#menu-collapse.in{
-		overflow: hidden;
-	}
-	nav.navbar.navbar-inverse.navbar-fixed-top {
-		background-color: #1a1a1a;	
-		opacity: 1.0;
-        margin-bottom: 0px;        
-	}	
-    #nav-list > li > a:hover{
-        background-color: gray;        
-    }
-    /*HOME PAGE*/	
-    #home h1 {
-	    font-size: 30px;	
-    }
-    #home article {
-        font-size: 1em;
-    }
-    #home{  
-        height: 500px;                  
-        background-size: 100% 100%;
-    }
-    #home div.row div.col-xs-11 {	
-        position: relative;
-	    top: 200px;
-    }
-    /*ABOUT SESSION*/	
-	#description-about {	
-		margin-bottom: 20px;       
-        word-spacing: .5px;			
-	}	
-	h2 {				
-		font-size: 2.2em;
-    }
-	hr{
-		width: 15%;
-	}
-	/*WORK AND EDUCATION*/
-	/*Making the work and education section display one below another */
-	.work-sections, .edu-sections{
-		background: none;
-		position: static;
-		padding: 0px;
-	}
-	/*PROJECTS*/
-	div#web{
-		margin-top: 80px;
-		margin-bottom: 50px;
-	}
-	#my-projects div.row div.row{
-		margin-top: 50px;
-	}
-	div#csharp{
-		margin-bottom: 50px;
-	}
-	#my-projects i{
-		font-size: 5vw;
-	}
-    /*CONTACT SESSION*/
-	a.visible-xs {
-		text-decoration: none;			
-	}	
-	#call-btn i.fa.fa-phone {		
-		margin-bottom: 5px;
-	}
-    #email-address{
-        font-size: .9em;      
-    }
-    i.fa.fa-envelope, i.fa.fa-phone {
-        margin-right: 10px;
-        margin-left: 0px;
-    }    
-	/*button for calling phone number*/
-	#call-btn > a {		
-		color: #fff;
-		font-size: 1em;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		border: 2px solid #555;
-	    background-color: #f6b319;	   
-	}
-	/*Line that separates Contact info from leave me a message*/
-	hr.visible-xs {
-		width: 50%;
-		border-color: #fff;
-		margin-left: 25%;
-		margin-right: 25%;
-		margin-bottom: 60px;
-		margin-top: 60px;
-	}
-	/*Align every text inside contact info and leave a message sections in the center*/
-	#contact div.row div.row .col-xs-12 {
-		text-align: center;
-	}    
-	#contact {
-		margin-bottom: 20px;
-	}
-	/*Allows send message and reset message buttonto be displayed vertically using flexbox*/
-	div.flex-container{
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-	}	
-	input.btn.btn-primary, input.btn.btn-danger{
-		margin-right: 0px;
-		margin-bottom: 20px;
-	}
-	/*FOOTER*/
-    #github, #codepen{
-        margin-left: 30px;       
-    }
-    .panel-footer{
-        font-size: .8em;
-    }
-    
 }
