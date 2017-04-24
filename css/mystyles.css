@@ -365,7 +365,7 @@ footer > div.text-center {
 	div#menu-collapse.in{
 		overflow: hidden;
 	}
-	.navbar.navbar-inverse.navbar-fixed-top {
+	nav.navbar.navbar-inverse.navbar-fixed-top {
 		background-color: #1a1a1a;	
 		opacity: 1.0;
         margin-bottom: 0px;        
