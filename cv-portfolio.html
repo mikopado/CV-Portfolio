@@ -13,19 +13,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 	
 	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
-
-
 </head>
 <body>
    <!-- 	HEADER - NAVIGATION BAR -->
 	<header>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-        	
+		<div class="container-fluid">        	
 				<div class="navbar-header">
-				<a id="logonav" href="#home" class="navbar-brand navbar-text"><span>&lt;&#47;&gt;<span id="initials">ME</span></span></a> 	
-
-					<!--Code to handle the nav-bar and make it collapsable for small size. Take from an online course-->
+				<a id="logonav" href="#home" class="navbar-brand navbar-text"><span>&lt;&#47;&gt;<span id="initials">ME</span></span></a>
+			<!--Code to handle the nav-bar and make it collapsable for small size. Taken from Bootstrap framework-->
 					<button id="navbarToggle" type="button" class="navbar-toggle menu-active" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
 						<span class="sr-only">Toggle Navigation</span>
 						<span class="icon-bar"></span>
@@ -33,7 +29,6 @@
 						<span class="icon-bar"></span>
 					</button>
 				</div> <!-- End of navbar header -->
-
 				<div class="collapse navbar-collapse" id="menu-collapse">
 					<ul id="nav-list" class="nav navbar-nav navbar-right">
 						<li class="navbar-text text-center"><a href="#home">Home</a></li>
@@ -43,14 +38,12 @@
 						<li class="navbar-text text-center"><a href="#my-projects">Projects</a></li>
 						<li class="navbar-text text-center"><a href="#contact">Contacts</a></li>
 					</ul>
-				</div>
-          	
+				</div>  <!--End code from Bootstrap          	-->         	
 		</div> <!-- End of Container -->
 		</nav>
 	</header> <!--  END OF HEADER --> 
 <!-- MAIN PAGE -->
-<div id="home" class="container-fluid">
-	<!--<img class="img-responsive" src="images/my-desk-background-image.JPG" alt="Portfolio's Background image" title="Michele Ercolino's Desk">	-->
+<div id="home" class="container-fluid">	
 	<div class="row">
 		<div class="col-xs-offset-1 col-xs-11">
 	        <section><h1>Hello, I'm <strong>Michele Ercolino</strong></h1>
@@ -60,7 +53,6 @@
 	</div>
     <div class="text-center hidden-xs"><a href="#about" alt-text="arrow-to-scroll-down"><span class="fa fa-chevron-down fa-5x" aria-hidden="true"></span></a></div>
 </div>
-
 <!-- END OF MAIN PAGE -->
 <!-- ABOUT SESSION -->
 <div id="about" class="container-fluid">
@@ -69,12 +61,11 @@
 	<div class="row">
 		<div id="description-about" class="col-md-6 col-xs-12">
 			<section><p>I started coding at the beginning of 2016 and since then I am really enjoying it and I cannot stop coding or learning new technologies. However, I have a degree in Geology and I have worked for several years in geoscience sector either as Geologist or Geophysicist.</p><p> I am ready for a new challenge of my life, becoming a professional software developer. I like improving myself and achieving always better results. I like enjoying the beauty and simple things of the life. Better a good glass of wine than a low quality bottle of it. Quality first in the life as well as at work.</p></section>
-		</div>
-	
+		</div>	
 		<div id="my-photo" class="col-md-6 col-xs-12">
 			<img class="img-responsive" src="images/michele-ercolino's-photo.jpg" alt="photo of Michele Ercolino" title="Michele Ercolino">
 		</div>
-	</div> <!-- End Row -->
+	</div> 
 	</div>
 	</div>
 </div> <!-- End of About Session -->
@@ -124,13 +115,11 @@
 						reported it on my final project of Master's Degree. 
 					</p>
 				</section>
-
 			</div>
-		</div> <!-- End Row -->
+		</div> 
 	</div>
 	</div>
 </div> <!-- End of Work Experience Session -->
-
 <!--EDUCATION SESSION-->
 <div id="education" class="container-fluid">
 	<div class="row">
@@ -149,8 +138,7 @@
 						Object-oriented programming, Web and User Interface design, Information system. Programming languages and technologies used: Python, JavaScript, HTML5, CSS3, SQL.
 						<p class="year">Oct 2016 - Present</p><p class="headline"><strong>Full Stack Web Development Certification</strong> at Free Code Camp</p>
 						Online course for web development. Includes Front-end, back-end, data visualization and full stack certifications. I am about to terminate the front-end certification.
-						Programming languages and technologies used: HTML5, CSS3, JavaScript, JQuery, Bootstrap.
-											
+						Programming languages and technologies used: HTML5, CSS3, JavaScript, JQuery, Bootstrap.											
 					</p>
 				</section>
 				<section id="2016-2016" class="edu-sections">
@@ -177,14 +165,11 @@
 						 Relevant subjects: Mathematics, Physics, Geology, Chemistry, Geophysics, Petrografy, Paleontology, Mineralogy, Applied Geology, Geochemistry.
 					</p>
 				</section>
-				
-
 			</div>
-		</div> <!-- End Row -->
+		</div> 
 	</div>
 	</div>
 </div> <!-- End of Education Session -->
-
 <!--PROJECTS SESSION-->
 <div id="my-projects" class="container-fluid">
 	<div class="row">
@@ -192,58 +177,35 @@
 		<div class="row">
 			<a href="webapps.html" alt="web apps" title="web apps">
 			<div id="web" class="col-xs-12 col-sm-offset-2 col-sm-4"><section><i class="devicon-html5-plain-wordmark colored"></i>
-				<i class="devicon-css3-plain-wordmark colored"></i><i class="devicon-javascript-plain colored"></i></section><span>Web Apps</span>
-				
-				</div></a>
-			<a href="python.html" alt="python apps" title="python apps"><div id="python" class="col-xs-12 col-sm-offset-1 col-sm-4"><img src="https://maxcdn.icons8.com/Color/PNG/24/Programming/python-24.png" title="Python" width="24"><span>Python Apps</span>
-				
-				</div></a>
-			</div> 
-			<div class="row">
-			<a href="csharp.html" alt="c# apps" title="c# apps"><div id="csharp" class="col-xs-12 col-sm-offset-2 col-sm-4"><i class="devicon-csharp-plain colored"></i><span>C# Apps</span>
-								
-				
-				</div></a>
-			<a href="mobile.html" alt="mobile apps" title="mobile apps"><div id="mobile" class="col-xs-12 col-sm-offset-1 col-sm-4"><i class="devicon-android-plain colored"></i>
-						<span>Mobile Apps</span>
-			
-				</div></a>
+				<i class="devicon-css3-plain-wordmark colored"></i><i class="devicon-javascript-plain colored"></i></section>
+				<span>Web Apps</span>				
+				</div>
+			</a>
+			<a href="python.html" alt="python apps" title="python apps"><div id="python" class="col-xs-12 col-sm-offset-1 col-sm-4">
+				<img src="https://maxcdn.icons8.com/Color/PNG/24/Programming/python-24.png" title="Python Logo" width="24">
+				<span>Python Apps</span>				
+				</div>
+			</a>
+		</div> 
+		<div class="row">
+			<a href="csharp.html" alt="c# apps" title="c# apps"><div id="csharp" class="col-xs-12 col-sm-offset-2 col-sm-4">
+				<i class="devicon-csharp-plain colored"></i><span>C# Apps</span>			
 			</div>
-		
+			</a>
+			<a href="mobile.html" alt="mobile apps" title="mobile apps"><div id="mobile" class="col-xs-12 col-sm-offset-1 col-sm-4">
+				<i class="devicon-android-plain colored"></i><span>Mobile Apps</span>		
+				</div>
+			</a>
+		</div>		
 	</div>
-	</div><!-- End Row -->
+	</div>
 </div> <!-- End of Projects Session -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- CONTACT ME SESSION -->
-
 <div id="contact" class="container-fluid">
 	<div class="row">
 		<div class="col-xs-offset-1 col-xs-10 col-xs-offset-1">
 	        <div id="contact-title"><h2>Contact Me</h2><hr></div>	
+			<!--Phone Number and email-address section-->
 	            <div class="row" id="contact-content">
 		            <div class="col-sm-5 col-xs-12">
 			            <div class="row">
@@ -258,6 +220,7 @@
 			            </div>			
 		            </div>
 		<hr class="visible-xs">
+		<!--Form Section-->
 		            <div class="col-sm-7 col-xs-12">
                         <div class="row">
                             <div class="col-xs-12">
@@ -273,15 +236,15 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>			
+                        </div>		
 		        </div>
-	        </div> <!-- end of contact content row -->
-	<br>
+	        </div><br>
 	</div>
 	</div>
 </div> <!-- End of Contact me Session -->
-<!-- Foot Session -->
+<!-- FOOT SESSION -->
 <footer>
+	<!--Social links-->
 	<div class="text-center">
 		<a id="linkedin" class="edit-buttons" href="https://ie.linkedin.com/in/micheleercolino" target="_blank" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
 		    <span class="fa fa-linkedin-square fa-2x"></span>
@@ -292,17 +255,17 @@
 		<a id="codepen" class="edit-buttons" href="http://codepen.io/mikopado/#" target="_blank" data-toggle="tooltip" data-placement="bottom" title="CodePen">
         <span class="fa fa-codepen fa-2x"></span></a>
 	</div>
-
+	<!--Actual footer-->
 	<div class="panel-footer">
 		<p class="text-center">Written and Coded by <span class="text-primary">Michele Ercolino</span></p>
 	</div>
 </footer>
-
+	<!--JQuery script-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
+	<!--JavaScript for Bootstrap script (necessary to handle the navigation menu collapsable button)-->
 	<script src="js/bootstrap.min.js"></script>	
+	<!--Personal script-->
 	<script src="js/script.js"></script>
-
 </body>
-
 </html>

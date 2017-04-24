@@ -8,24 +8,25 @@ body {
 			HEADER
 
 *********************************/
-/*Navigation-bar*/
+/*Navigation-bar - navbar-fixed-top is Bootstrap class for navigation bar. CHANGED some default properties to adapt to the website*/
 .navbar.navbar-inverse.navbar-fixed-top {
 	background-color: transparent;
 	opacity: .9;
-	border-width: 0px;
-    position: fixed;
+	border-width: 0px;    
 	transition: all 2s ease-in-out;
-	-webkit-transition: all 2s ease-in-out;
-    
+	-webkit-transition: all 2s ease-in-out;    
 }
 div.navbar-header{
 	display: flex;
 	align-items: baseline;
 }
-/*Menu of navigation bar*/
+header div.container-fluid{
+	margin-left: 110px;
+	margin-right: 30px;
+}
+/*Menu of navigation bar and list of elements*/
 #nav-list > li > a, #nav-list > li > a:focus {
-    color:#fff;
- 	/*vertical-align: middle;*/
+    color:#fff; 	
  	background-color: transparent; 	
  }
  #nav-list > li > a:hover{
@@ -33,18 +34,11 @@ div.navbar-header{
 	font-weight: bold;
 	color: #FFD700;
 }
-
-header div.container-fluid{
-	margin-left: 110px;
-	margin-right: 30px;
-}
 /*Logo on the upper left corner*/
 #logonav {
 	font-family: 'Consolas', monospace;
 	font-weight: bold;
-	font-style: italic;
-	/*margin-bottom: 10px;
-	margin-top: 10px;*/
+	font-style: italic;	
 	color: #FFD700;
 	font-size: 1.1em;    
 }
@@ -61,10 +55,7 @@ header div.container-fluid{
 			HOME PAGE
 
 *********************************/
-#home div.row div.col-xs-11 {
-	position: relative;
-	top: 300px;
-}
+
 /*Welcoming message in the centre of page*/
 #home h1 {
 	font-size: 4em;	
@@ -72,13 +63,18 @@ header div.container-fluid{
 #home article {
 	font-size: 1.5em;
 }
-
+#home div.row div.col-xs-11 {
+	position: relative;
+	top: 300px;
+}
+/*Whole page -- set background image*/
 #home{
     width: 100%;
     height: 700px;
     background: url('../images/my-desk-background-image.JPG') no-repeat;    
     background-size: cover;
 }
+/*Positioning the Arrow at bottom of main page*/
 #home div.text-center{
     position: relative;    
     top: 65%;    
@@ -91,60 +87,54 @@ header div.container-fluid{
 			ABOUT SESSION
 
 *********************************/
+/*Set the text color to black*/
 #about {
 	color: #000;	
 }
-/*Title of Session: About me, My portfolio, contact me*/
+/*Title of Sessions: About me, Work Experience, Education, My Projects, contact me*/
 h2 {
 	margin-bottom: 0px;
 	margin-top: 100px;
-	color: #000;
-	
+	color: #000;	
 }
-/*Line under Tile of sessions*/
+/*Line under Title of sessions*/
 hr {
 	width: 5%;
 	border-width: 2px;
 	float: left;
 	border-color: #FFD700;
 }
-
 /*Text of About me*/
 #description-about {
 	word-spacing: 2px;
 	text-align: justify;	
 	line-height: 250%;	
 }
-
+/*Splitting the text in two*/
 #description-about section p:nth-child(1)  {
 	margin-bottom: 30px;
 }
-
 /*Row that includes text and photo*/
 #about div.row div.row {
 	margin-top: 100px;
 	margin-bottom: 50px;
 } 
-/*#about.container-fluid {
-	margin-top: 80px;
-}*/
 /***********************************
 		WORK EXPERIENCE 
 			&&
 		EDUCATION SESSION
 
 *********************************/
-/*#work, #education{
-	margin-top: 100px;
-	
-}*/
+/*Background color of education session*/
 #education{
 	background-color: #f8f8ff;
 }
+/*Display the buttons vertically*/
 #work div.col-md-2, #education div.col-md-2{
 	display: flex;
 	flex-direction: column;
 }
+/*Style text content of work and education sections*/
 .work-sections, .edu-sections{
 	color: black;	
 	padding: 20px;
@@ -153,20 +143,22 @@ hr {
 	line-height: 220%;	
 	text-align: justify;
 	position: absolute;
-	top: 0;
-	
+	top: 0;	
 }
+/*Style the years at beginning of each paragraph in work and education sections*/
 .year{
 	font-weight: bold;
 	margin-bottom: 2px;
 }
+/*Giving space between different jobs or education in each work and education section*/
 .work-sections p:nth-child(4), .edu-sections p:nth-child(4){
 	margin-top: 15px;
 }
+/*Italic font-style for job title and educational institute*/
 .headline{
 	font-style: italic;
 }
-
+/*Whole box which contains buttons and paragraphs*/
 #work div.row div.row, #education div.row.row {
 	margin-top: 100px;
 	margin-bottom: 50px;
@@ -174,6 +166,7 @@ hr {
 #education h2{
 	margin-top: 0px;
 }
+/*Education and work Buttons on the left side*/
 .edu-btn, .work-btn{
 	width: 100%;
 	height: 70px;
@@ -182,38 +175,38 @@ hr {
     border: none;   
     box-shadow: 5px 5px 2px #888888; 
     color: white;
-	
 }
+/*Modifying default behaviour of buttons for hovering and focusing*/
 .edu-btn:hover, .work-btn:hover, .edu-btn:focus, .work-btn:focus{
 	color: white;
 	border-color: transparent;
 	outline: none!important;
 }
-
-
 /***********************************
 		MY PROJECTS SESSION
 
 *********************************/
-
+/*Giving space between title of section and content*/
 #my-projects div.row div.row{
-	margin-top: 100px;
-	
+	margin-top: 100px;	
 }
+/*Giving space between the two rows of project frames*/
 #my-projects div.row{
 	margin-bottom:50px;
 }
+/*Set size for project image frames*/
 #my-projects button{
 	width: 100%;
 	height: 200px;
 }
 #my-projects a{
-	text-decoration: none;
-	 
+	text-decoration: none;	 
 }
+/*Giving shadow to the project image frames*/
 #my-projects a > div{
 	box-shadow: 10px 10px 5px #888888;
 }
+/*Styling the project image frames and positioning them in the row using Flexbox*/
 #my-projects div.col-xs-12{
 	border: .5px solid gray;	
 	height: 250px;
@@ -221,30 +214,31 @@ hr {
 	display: flex;
 	color: transparent;	
 	align-items: flex-start;
-	justify-content: space-between;	
-	
+	justify-content: space-between;		
 }
+/*Styling icons at the top left corner of image frames*/
 #my-projects i, #my-projects img{
 	font-size: 1.3vw;
 	margin-top: 10px;
 }
+/*Using Flexbox to position the icons and the project name inside the image frame*/
 #my-projects section{
 	display: flex;
 	flex-direction: column;
-}
-
-#my-projects div.col-xs-12:hover{
-	filter: brightness(80%);
-	/*opacity: .7;*/
-	color: white;
-	transition: all 1s ease-in-out;
-	font-size: 1.5em;
 }
 #my-projects span{	
 	align-self: center;	
 	margin: auto; 	
 	font-weight: bold;
 }
+/*Making the image frame a bit darker and pop up the project name when hovering the image*/
+#my-projects div.col-xs-12:hover{
+	filter: brightness(80%);
+	color: white;
+	transition: all 1s ease-in-out;
+	font-size: 1.5em;
+}
+/*Background images for project frames*/
 #web{
 	background: url('../images/Web-apps.jpg');
 }
@@ -258,8 +252,6 @@ hr {
 	background: url('../images/mobile-apps.jpg');
 	
 }
-
-
 /***********************************
 		CONTACT ME SESSION
 
@@ -278,13 +270,11 @@ div#contact-title h2 {
 	margin-top: 120px;	
 	margin-right: 0px;
 }
-
 /*Contact info text*/
 #info {
 	display: block;
 	margin-bottom: 30px;
 	font-size: 1.4em;
-
 }
 /*Leave me a message text*/
  #message-title {
@@ -293,7 +283,7 @@ div#contact-title h2 {
 	font-size: 1.5em;
  }
  /*Icons of mail and phone*/
-.glyphicon {
+.fa.fa-envelope, .fa.fa-phone {
 	margin: 0px 20px 40px 10px; 
 	opacity: .8;	
 }
@@ -302,7 +292,6 @@ div#contact-title h2 {
 	white-space: pre;
 	font-size: 1.1em;
 }
-
 /*LEAVE ME A MESSAGE*/
 /*Text box for name email and message*/
 input, textarea {
@@ -317,8 +306,9 @@ input.btn.btn-primary{
 	FOOT SESSION
 
 *****************/
-
-
+footer {
+	padding: 0;
+}
 /*Linkedin and github icons*/
 a.btn-linkedin, a.btn-github {
 	margin-right: 50px;
@@ -328,10 +318,7 @@ footer > div.text-center {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-footer {
-	padding: 0;
-}
-/*Codepen icon*/
+/*Icons*/
 #codepen, #github {	
 	color: #000;	
 	margin-left: 70px;	
@@ -347,12 +334,9 @@ footer {
 	color: #000;
 	margin-top: 10px;
 }
-
-
-
-
-
+/*VERY SMALL SCREEN (MOBILE SIZE)*/
 @media(max-width: 767px) {
+	/*Giving padding to body to push down the background image below navigation bar as navbar is fixed and so out of normal flow*/
 	body{
 		padding-top: 50px;
 	}
@@ -366,8 +350,7 @@ footer {
 	}	
 	div.navbar-header{
 		display: block;
-	}
-	
+	}	
 	#logonav {
 		margin: 5px 0px 0px 15px;
 		font-size: 1em;				
@@ -378,6 +361,7 @@ footer {
 	#logonav:hover {
 		font-size: 1.2em;
 	}
+	/*Hides the scroolbar to navigation menu*/
 	div#menu-collapse.in{
 		overflow: hidden;
 	}
@@ -389,8 +373,7 @@ footer {
     #nav-list > li > a:hover{
         background-color: gray;        
     }
-    /*HOME PAGE*/
-	
+    /*HOME PAGE*/	
     #home h1 {
 	    font-size: 30px;	
     }
@@ -405,8 +388,7 @@ footer {
         position: relative;
 	    top: 200px;
     }
-    /*ABOUT SESSION*/
-	
+    /*ABOUT SESSION*/	
 	#description-about {	
 		margin-bottom: 20px;       
         word-spacing: .5px;			
@@ -417,14 +399,13 @@ footer {
 	hr{
 		width: 15%;
 	}
-
 	/*WORK AND EDUCATION*/
+	/*Making the work and education section display one below another */
 	.work-sections, .edu-sections{
 		background: none;
 		position: static;
 		padding: 0px;
 	}
-
 	/*PROJECTS*/
 	div#web{
 		margin-top: 80px;
@@ -443,17 +424,16 @@ footer {
 	a.visible-xs {
 		text-decoration: none;			
 	}	
-	#call-btn .glyphicon.glyphicon-earphone {		
+	#call-btn i.fa.fa-phone {		
 		margin-bottom: 5px;
 	}
     #email-address{
         font-size: .9em;      
     }
-    .glyphicon {
+    i.fa.fa-envelope, i.fa.fa-phone {
         margin-right: 10px;
         margin-left: 0px;
-    }
-    
+    }    
 	/*button for calling phone number*/
 	#call-btn > a {		
 		color: #fff;
@@ -464,7 +444,6 @@ footer {
 		border: 2px solid #555;
 	    background-color: #f6b319;	   
 	}
-
 	/*Line that separates Contact info from leave me a message*/
 	hr.visible-xs {
 		width: 50%;
@@ -477,23 +456,20 @@ footer {
 	/*Align every text inside contact info and leave a message sections in the center*/
 	#contact div.row div.row .col-xs-12 {
 		text-align: center;
-	}
-    
+	}    
 	#contact {
 		margin-bottom: 20px;
 	}
+	/*Allows send message and reset message buttonto be displayed vertically using flexbox*/
 	div.flex-container{
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-	}
-	
+	}	
 	input.btn.btn-primary, input.btn.btn-danger{
 		margin-right: 0px;
 		margin-bottom: 20px;
-		
 	}
-
 	/*FOOTER*/
     #github, #codepen{
         margin-left: 30px;       
@@ -503,7 +479,9 @@ footer {
     }
     
 }
+/*SMALL SCREEN SIZE (TABLET SIZE)*/
 @media(min-width: 768px) and (max-width: 991px){
+	/*Correcting the position of the elements in the menu list to fit them in one line as in the desktop screen*/
 	#nav-list > li {
 		margin-right: 0px;
 		margin-left: 0px;
@@ -521,19 +499,19 @@ footer {
 	header div.container-fluid{		
 		margin-left: 50px;		
 		margin-right: 20px;
-	}
-	#email-address, #phone-number{
-		font-size: .9em;
-	}
-
+	}	
 	/*WORK AND EDUCATION*/
 	.work-btn, .edu-btn{
 		font-size: .8em;
 		padding: 0px;
 	}
 	.work-sections, .edu-sections{
-		line-height: 130%;
-		
+		line-height: 130%;		
 	}
+	/*CONTACT SESSION*/
+	#email-address, #phone-number{
+		font-size: .9em;
+	}
+
 
 }
