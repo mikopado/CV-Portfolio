@@ -334,6 +334,42 @@ footer > div.text-center {
 	color: #000;
 	margin-top: 10px;
 }
+/*SMALL SCREEN SIZE (TABLET SIZE)*/
+@media(min-width: 768px) and (max-width: 991px){
+	/*Correcting the position of the elements in the menu list to fit them in one line as in the desktop screen*/
+	ul#nav-list > li {
+		margin-right: 0px;
+		margin-left: 0px;
+		padding:0px;
+		font-size: .9em;
+	}
+	a#logonav{
+		font-size: .8em;
+		margin-right: 0px;
+		margin-left: 10px;
+	}
+	#logonav:hover {
+		font-size: 1.1em;
+	}
+	header div.container-fluid{		
+		margin-left: 0px;		
+		margin-right: 20px;
+	}	
+	/*WORK AND EDUCATION*/
+	.work-btn, .edu-btn{
+		font-size: .8em;
+		padding: 0px;
+	}
+	.work-sections, .edu-sections{
+		line-height: 130%;		
+	}
+	/*CONTACT SESSION*/
+	#email-address, #phone-number{
+		font-size: .9em;
+	}
+
+
+}
 /*VERY SMALL SCREEN (MOBILE SIZE)*/
 @media(max-width: 767px) {
 	/*Giving padding to body to push down the background image below navigation bar as navbar is fixed and so out of normal flow*/
@@ -478,40 +514,4 @@ footer > div.text-center {
         font-size: .8em;
     }
     
-}
-/*SMALL SCREEN SIZE (TABLET SIZE)*/
-@media(min-width: 768px) and (max-width: 991px){
-	/*Correcting the position of the elements in the menu list to fit them in one line as in the desktop screen*/
-	ul#nav-list > li {
-		margin-right: 0px;
-		margin-left: 0px;
-		padding:0px;
-		font-size: .9em;
-	}
-	a#logonav{
-		font-size: .8em;
-		margin-right: 0px;
-		margin-left: 10px;
-	}
-	#logonav:hover {
-		font-size: 1.1em;
-	}
-	header div.container-fluid{		
-		margin-left: 0px;		
-		margin-right: 20px;
-	}	
-	/*WORK AND EDUCATION*/
-	.work-btn, .edu-btn{
-		font-size: .8em;
-		padding: 0px;
-	}
-	.work-sections, .edu-sections{
-		line-height: 130%;		
-	}
-	/*CONTACT SESSION*/
-	#email-address, #phone-number{
-		font-size: .9em;
-	}
-
-
 }
