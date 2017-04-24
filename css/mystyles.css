@@ -486,18 +486,18 @@ footer > div.text-center {
 		margin-right: 0px;
 		margin-left: 0px;
 		padding:0px;
-		font-size: .8em;
+		font-size: .9em;
 	}
 	a#logonav{
 		font-size: .8em;
 		margin-right: 0px;
-		margin-left: 0px;
+		margin-left: 10px;
 	}
 	#logonav:hover {
 		font-size: 1.1em;
 	}
 	header div.container-fluid{		
-		margin-left: 50px;		
+		margin-left: 0px;		
 		margin-right: 20px;
 	}	
 	/*WORK AND EDUCATION*/
