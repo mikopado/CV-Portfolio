@@ -491,7 +491,7 @@ footer > div.text-center {
 	a#logonav{
 		font-size: .8em;
 		margin-right: 0px;
-		margin-left: 5px;
+		margin-left: 0px;
 	}
 	#logonav:hover {
 		font-size: 1.1em;
