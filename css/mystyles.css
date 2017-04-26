@@ -335,7 +335,7 @@ footer > div.text-center {
 	margin-top: 10px;
 }
 /*SMALL SCREEN SIZE (TABLET SIZE)*/
-@media (min-width: 481px) and (max-width: 1024px) and (orientation: landscape){
+@media (min-width: 768px) and (max-width: 991px){
 	/*Correcting the position of the elements in the menu list to fit them in one line as in the desktop screen*/
 	ul#nav-list > li {
 		margin-right: 0px;
