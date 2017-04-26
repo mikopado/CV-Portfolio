@@ -363,6 +363,9 @@ footer > div.text-center {
 		/*padding: 5px;*/
 		width: 130%;
 		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	.work-sections, .edu-sections{
 		line-height: 130%;		
