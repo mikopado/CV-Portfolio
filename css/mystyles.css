@@ -251,8 +251,7 @@ hr {
 	background: url('../images/csharp.jpg');
 }
 #mobile{
-	background: url('../images/mobile-apps.jpg');
-	
+	background: url('../images/mobile-apps.jpg');	
 }
 /***********************************
 		CONTACT ME SESSION
@@ -368,6 +367,9 @@ footer > div.text-center {
 	#description-about section p:nth-child(1)  {
 		margin-bottom: 10px;
 	}
+	#my-photo{
+		margin-top: 0px;
+	}
 	/*WORK AND EDUCATION*/
 	.work-btn, .edu-btn{
 		font-size: .8em;
@@ -433,13 +435,15 @@ footer > div.text-center {
     #home article {
         font-size: 1em;
     }
-    #home{  
-        height: 500px;                  
-        background-size: 100% 100%;
-    }
+    #home{
+		width: 100%;
+		height: 100vh;
+		background: url('../images/my-desk-background-image-min.JPG') no-repeat;    
+		background-size: 100% 100%;
+	}
     #home div.row div.col-xs-11 {	
         position: relative;
-	    top: 200px;
+	    top: 300px;
     }
     /*ABOUT SESSION*/	
 	#description-about {	
@@ -472,8 +476,18 @@ footer > div.text-center {
 	}
 	#my-projects i{
 		font-size: 5vw;
+	}	
+	#csharp{
+		background: url('../images/csharp-min.jpg');
+	}
+	#mobile{
+		background: url('../images/mobile-apps-min.jpg');	
 	}
     /*CONTACT SESSION*/
+	#contact {	
+		background: url("../images/gray-background-min.jpg") no-repeat; 	
+		background-size: cover;
+	}
 	a.visible-xs {
 		text-decoration: none;			
 	}	
