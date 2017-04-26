@@ -483,8 +483,8 @@ footer > div.text-center {
     #email-address{
         font-size: .9em;      
     }
-    i.fa.fa-envelope, i.fa.fa-phone {
-        margin-right: 5px;
+    #email-address i.fa.fa-envelope, #phone-number i.fa.fa-phone {
+        margin-right: 2px;
         margin-left: 0px;
     }    
 	/*button for calling phone number*/
