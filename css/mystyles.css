@@ -340,6 +340,7 @@ footer > div.text-center {
 /*SMALL SCREEN SIZE (TABLET SIZE)*/
 @media (min-width: 768px) and (max-width: 1024px){
 	/*Correcting the position of the elements in the menu list to fit them in one line as in the desktop screen*/
+	/*HEADER*/
 	ul#nav-list > li {
 		margin-right: 0px;
 		margin-left: 0px;
@@ -357,8 +358,17 @@ footer > div.text-center {
 		margin-right: 0px;		
 		margin-right: 10px;
 	}	
+	/*HOME PAGE	*/
 	#home div.text-center{    	 
     	top: 60%;    
+	}
+	/*ABOUT*/
+	#description-about {
+		word-spacing: .5px;		
+		line-height: 200%;	
+	}	
+	#description-about section p:nth-child(1)  {
+		margin-bottom: 10px;
 	}
 	/*WORK AND EDUCATION*/
 	.work-btn, .edu-btn{
