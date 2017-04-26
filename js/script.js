@@ -82,6 +82,9 @@ $(function () {
 		if (window.innerWidth >= 768){
 			$('.work-btn#2015').click();
 			$('.edu-btn#2017').click();
+			if ($(window).scrollTop() !== 0){//set navbar background color to zero when you open page on different session than home page
+				$('.navbar.navbar-inverse.navbar-fixed-top').css("background-color", "#000");
+			}
 		}
 		
 	});

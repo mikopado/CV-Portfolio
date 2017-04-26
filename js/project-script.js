@@ -10,7 +10,6 @@ $(function(){
             }
         });
     });
-
      $('div.row button').mouseup(function(){//Let buttons loose the focus after click on them 
 		$('div.row button').blur();
 	});
