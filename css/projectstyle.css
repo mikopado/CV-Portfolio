@@ -18,8 +18,7 @@ div.navbar-header{
 }
 /*Menu of navigation bar*/
 #nav-list > li > a, #nav-list > li > a:focus {
-    color:#fff;
- 	
+    color:#fff; 	
  	background-color: transparent; 	
  }
  #nav-list > li > a:hover{
