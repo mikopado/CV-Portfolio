@@ -153,7 +153,8 @@ div.app-img{
 		width: 15%;
 	}
     button.btn.btn-info{
-        margin-bottom: 20px;
+        margin-bottom: 20px;  
+		font-size: .9em;	
     }
 	button.open-btn{
 		margin-left: 5px;
@@ -177,7 +178,7 @@ div.app-img{
 	header div.container-fluid{					
 		margin-right: 10px;
 	}
-	#python button, #csharp button, #mobile button{    
+	button.btn.btn-info{    
 		font-size: .9em;
 	}
 	
