@@ -359,6 +359,7 @@ footer > div.text-center {
 	.work-btn, .edu-btn{
 		font-size: .8em;
 		padding: 0px;
+		width: 100%;
 	}
 	.work-sections, .edu-sections{
 		line-height: 130%;		
