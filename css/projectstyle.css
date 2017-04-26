@@ -103,7 +103,7 @@ hr {
 /*Set the frame for each app in the project pages*/
 div.app-img{
     width: 100%;
-    height:100vh;    
+    height:auto;    
     border: 1px solid gray;
     box-shadow: 5px 5px 2px #888888;
 }
