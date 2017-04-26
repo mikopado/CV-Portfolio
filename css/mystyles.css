@@ -394,6 +394,8 @@ footer > div.text-center {
 	/*Giving padding to body to push down the background image below navigation bar as navbar is fixed and so out of normal flow*/
 	body{
 		padding-top: 50px;
+		letter-spacing: 1px;
+		word-spacing: .2px;
 	}
     /*HEADER */
 	header div.container-fluid{
