@@ -21,7 +21,7 @@ div.navbar-header{
 	align-items: baseline;
 }
 header div.container-fluid{	
-	margin-right: 30px;
+	margin-right: 50px;
 }
 /*Menu of navigation bar and list of elements*/
 #nav-list > li > a, #nav-list > li > a:focus {
