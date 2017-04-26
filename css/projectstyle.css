@@ -27,7 +27,7 @@ div.navbar-header{
 	color: #FFD700;
 }
 header div.container-fluid{	
-	margin-right: 30px;
+	margin-right: 50px;
 }
 /*Logo on the upper left corner*/
 #logonav {
@@ -157,7 +157,7 @@ div.app-img{
     }
 }
 /*SMALL SCREEN SIZE(TABLET SIZE)*/
-@media(min-width: 768px) and (max-width: 991px){
+@media(min-width: 768px) and (max-width: 1024px){
 	#nav-list > li {
 		margin-right: 0px;
 		margin-left: 0px;
