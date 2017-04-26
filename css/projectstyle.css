@@ -27,8 +27,7 @@ div.navbar-header{
 	font-weight: bold;
 	color: #FFD700;
 }
-header div.container-fluid{
-	margin-left: 110px;
+header div.container-fluid{	
 	margin-right: 30px;
 }
 /*Logo on the upper left corner*/
@@ -168,14 +167,12 @@ div.app-img{
 	}
 	#logonav{
 		font-size: .8em;
-		margin-right: 0px;
-		margin-left: 10px;
+		margin-right: 0px;		
 	}
 	#logonav:hover {
 		font-size: 1.1em;
 	}
-	header div.container-fluid{		
-		margin-left: 50px;		
-		margin-right: 20px;
+	header div.container-fluid{					
+		margin-right: 10px;
 	}
 }

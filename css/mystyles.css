@@ -20,8 +20,7 @@ div.navbar-header{
 	display: flex;
 	align-items: baseline;
 }
-header div.container-fluid{
-	/*margin-left: 110px;*/
+header div.container-fluid{	
 	margin-right: 30px;
 }
 /*Menu of navigation bar and list of elements*/
@@ -354,8 +353,7 @@ footer > div.text-center {
 	#logonav:hover {
 		font-size: 1.1em;
 	}
-	body header div.container-fluid{		
-		margin-right: 0px;		
+	header div.container-fluid{				
 		margin-right: 10px;
 	}	
 	/*HOME PAGE	*/
