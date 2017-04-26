@@ -106,19 +106,22 @@ hr {
 }
 /*Text of About me*/
 #description-about {
-	word-spacing: 2px;
+	word-spacing: 1px;
 	text-align: justify;	
-	line-height: 250%;	
+	line-height: 240%;	
 }
 /*Splitting the text in two*/
 #description-about section p:nth-child(1)  {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 /*Row that includes text and photo*/
 #about div.row div.row {
 	margin-top: 100px;
-	margin-bottom: 50px;
+	margin-bottom: 50px;	
 } 
+#my-photo{
+	margin-top: 10px;
+}
 /***********************************
 		WORK EXPERIENCE 
 			&&
