@@ -368,6 +368,10 @@ footer > div.text-center {
 	#email-address, #phone-number{
 		font-size: .9em;
 	}
+	#email-address i.fa.fa-envelope, #phone-number i.fa.fa-phone {
+		margin-right: 5px; 
+		margin-left: 0px;
+	}
 
 
 }
