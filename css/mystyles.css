@@ -359,7 +359,8 @@ footer > div.text-center {
 	}
 	/*WORK AND EDUCATION*/
 	.work-btn, .edu-btn{
-		font-size: .8em;		
+		font-size: .8em;
+		padding: 0px;
 		width: 130%;
 		overflow: hidden;		
 	}
