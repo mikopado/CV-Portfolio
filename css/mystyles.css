@@ -353,7 +353,7 @@ footer > div.text-center {
 	}
 	body header div.container-fluid{		
 		margin-right: 0px;		
-		/*margin-right: 20px;*/
+		margin-right: 10px;
 	}	
 	/*WORK AND EDUCATION*/
 	.work-btn, .edu-btn{
