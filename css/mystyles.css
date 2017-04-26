@@ -360,9 +360,7 @@ footer > div.text-center {
 	/*WORK AND EDUCATION*/
 	.work-btn, .edu-btn{
 		font-size: .8em;
-		/*padding: 5px;*/
-		width: 130%;
-		overflow: hidden;
+		
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
