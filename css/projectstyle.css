@@ -75,7 +75,7 @@ p{
     text-align: justify;
 }
 /*Styling every buttons in project pages*/
-div.row button{
+button.btn.btn-info{
     background-color: #4682B4;
     border: none;   
     box-shadow: 5px 5px 2px #888888; 
@@ -83,7 +83,7 @@ div.row button{
 	letter-spacing: 1px;
 }
 /*Modifying default behaviour of buttons */
-div.row button:hover, div.row button:focus, div.row button:active, div.row button:visited{
+button.btn.btn-info:hover, button.btn.btn-info:focus, button.btn.btn-info:active, button.btn.btn-info:visited{
     background-color:  #1E90FF; 
     border: 0px;  
 }
@@ -152,8 +152,7 @@ div.app-img{
 	hr{
 		width: 15%;
 	}
-
-    div.row button{
+    button.btn.btn-info{
         margin-bottom: 20px;
     }
 }
