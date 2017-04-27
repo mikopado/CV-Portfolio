@@ -1,5 +1,5 @@
-$(function () { 
-	'use strict';
+$(function () { //IIFE - Immediately Invoked Function Expression. It's a way to wrap all JQuery code in anonymous function creating a local scope and protecting the code from external libraries that they might use same variables or properties 
+	'use strict'; //It means that JavaScript will be executed in strict mode. Basically it doesn't allow to use undeclared variable
 
     $(document).click(function() { // To make sandwich menu button go away when the button looses the focus and let user clicks on menu links
 		var screenWidth = window.innerWidth;
