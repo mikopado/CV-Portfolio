@@ -479,12 +479,7 @@ footer > div.text-center {
 	#my-projects i{
 		font-size: 5vw;
 	}	
-	#csharp{
-		background: url('../images/csharp-min.jpg');
-	}
-	#mobile{
-		background: url('../images/mobile-apps-min.jpg');	
-	}
+	
     /*CONTACT SESSION*/
 	#contact {	
 		background: url("../images/gray-background-min.jpg") no-repeat; 	
