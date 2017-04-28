@@ -162,11 +162,11 @@ hr {
 }
 /*Whole box which contains buttons and paragraphs*/
 #work div.row div.row, #education div.row.row {
-	margin-top: 100px;
+	margin-top: 70px;
 	margin-bottom: 50px;
 } 
 #education h2{
-	margin-top: 0px;
+	margin-top: 30px;
 }
 /*Education and work Buttons on the left side*/
 .edu-btn, .work-btn{
