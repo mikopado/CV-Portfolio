@@ -116,7 +116,7 @@ div.app-img{
 /*VERY SMALL SCREEN SIZE (MOBILE SCREEN)*/
 @media(max-width: 767px) {
     /*HEADER */
-	header div.container-fluid{
+	header div.container{
 		margin-left: 0px;
 		margin-right: 0px;
 	}
@@ -177,7 +177,7 @@ div.app-img{
 	#logonav:hover {
 		font-size: 1.1em;
 	}
-	header div.container-fluid{					
+	header div.container{					
 		margin-right: 10px;
 	}
 	button.btn.btn-info{    
