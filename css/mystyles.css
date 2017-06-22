@@ -195,16 +195,7 @@ hr {
 	width: 100%;
 	height: 30vh;
 }
-/*Giving space between the two rows of project frames*/
-/*#project{	
-	width: 100%;
-	height: 100vh;
-}*/
-/*Set size for project image frames*/
-/*#my-projects button{
-	width: 100%;
-	height: 100%;
-}*/
+
 #my-projects a{
 	text-decoration: none;	 
 }
@@ -267,7 +258,7 @@ hr {
 	background: url("../images/gray-background.jpg") no-repeat; 	
     background-size: cover;
 	width: 100%;
-	height: 80vh;
+	height: 85vh;
 }
 
 /*Contact Me text*/
@@ -277,7 +268,7 @@ div#contact-title h2 {
 /*Entire page except title*/
 #contact-content {
 	margin-top: 10vh;	
-	margin-right: 0px;
+	margin-right: 0px;	
 }
 /*Contact info text*/
 #info {
@@ -316,7 +307,7 @@ input.btn.btn-primary{
 
 *****************/
 footer {
-	padding: 0;
+	padding: 0;	
 }
 /*Linkedin and github icons*/
 a.btn-linkedin, a.btn-github {
@@ -405,7 +396,7 @@ footer > div.text-center {
 		letter-spacing: 1px;
 		word-spacing: .2px;
 	}
-	#work, #education, #my-projects, #last-page, #about, #contact, #row-1, #row-2{	
+	#work, #education, #my-projects, #last-page, #about, #contact, #row-1, #row-2, footer{	
 		height: inherit;	
 	}
 	#row-2{
