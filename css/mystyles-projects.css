@@ -60,7 +60,7 @@ div.row div.row{
 iframe{
     border-style: inset;
     width: 100%;
-    height: 100px; 
+    height: 15vh; 
     box-shadow: 3px 3px 2px #888888;        
 }
 /*Section of buttons below iframe in webapps page*/
@@ -161,7 +161,7 @@ div.app-img{
 	button.open-btn{
 		margin-left: 5px;
 	}
-	div.app-img{
+	div.app-img, iframe{
 		height: 30vh;
 	}
 }
