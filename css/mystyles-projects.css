@@ -143,6 +143,7 @@ div.app-img{
 		background-color: #1a1a1a;	
         margin-bottom: 0px;
         position: static;
+		height: inherit;
 	}	
     #nav-list > li > a:hover{
         background-color: gray;        

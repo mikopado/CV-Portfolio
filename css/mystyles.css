@@ -387,7 +387,7 @@ footer > div.text-center {
 		margin-right: 5px; 
 		margin-left: 0px;
 	}
-	#work, #education, #my-projects, #last-page, #about, #contact, #row-1, #row-2, footer{	
+	#work, #education, #my-projects, #last-page, #about, #contact, #row-1, #row-2{	
 		height: inherit;	
 	}
 	#row-2{
@@ -402,6 +402,7 @@ footer > div.text-center {
 		letter-spacing: 1px;
 		word-spacing: .2px;
 	}
+	/*Cancel height in vh for all session otherwise the link in the sandwich menu is not working properly*/
 	#work, #education, #my-projects, #last-page, #about, #contact, #row-1, #row-2{	
 		height: inherit;	
 	}
