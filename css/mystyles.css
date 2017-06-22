@@ -390,6 +390,9 @@ footer > div.text-center {
 	#work, #education, #my-projects, #last-page, #about, #contact, #row-1, #row-2, footer{	
 		height: inherit;	
 	}
+	#row-2{
+		margin-bottom: 50px;
+	}
 }
 /*VERY SMALL SCREEN (MOBILE SIZE)*/
 @media(max-width: 767px) {
