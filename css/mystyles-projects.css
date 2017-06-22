@@ -10,11 +10,15 @@ body {
 /*Navigation-bar*/
 .navbar.navbar-inverse.navbar-top {	
 	border-width: 0px;    
-    border-radius: 0;    
-}
-div.navbar-header{
+    border-radius: 0; 
 	display: flex;
-	align-items: baseline;
+	align-items: center;
+	height:	10vh; 
+	margin-bottom: 0;  
+}
+header div.container{	
+	margin: 0px;
+	width: 100%;
 }
 /*Menu of navigation bar*/
 #nav-list > li > a, #nav-list > li > a:focus {
@@ -25,9 +29,6 @@ div.navbar-header{
 	background-color: transparent;
 	font-weight: bold;
 	color: #FFD700;
-}
-header div.container-fluid{	
-	margin-right: 50px;
 }
 /*Logo on the upper left corner*/
 #logonav {
@@ -90,7 +91,7 @@ button.btn.btn-info:hover, button.btn.btn-info:focus, button.btn.btn-info:active
 /*Title of Session*/
 h1 {
 	margin-bottom: 0px;
-	margin-top: 10px;
+	margin-top: 3vh;
 	color: #000;
     font-size: 30px;	
 }

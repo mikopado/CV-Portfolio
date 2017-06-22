@@ -36,7 +36,7 @@ $(function () { //IIFE - Immediately Invoked Function Expression. It's a way to 
 	
 	$('.work-btn').click(function(){//Clicking buttons in work experience session it displays the associated section and hides the rest
 		hidesParagraph($('.work-sections'),$(this).attr('id'));		
-		$(this).css('background-color', '#00CED1');
+		$(this).css('background-color', '#ffdd1a');
 		swapButtonColors('.work-btn', $(this));		
 	});	
 
@@ -46,7 +46,7 @@ $(function () { //IIFE - Immediately Invoked Function Expression. It's a way to 
 	});
 	$('.edu-btn').click(function(){//Clicking buttons in work experience session it displays the associated section and hides the rest
 		hidesParagraph($('.edu-sections'),$(this).attr('id'));		
-		$(this).css('background-color', '#00CED1');
+		$(this).css('background-color', '#ffdd1a');
 		swapButtonColors('.edu-btn', $(this));		
 	});	
 	$('.edu-btn').blur(function(){	//Let buttons in work experience keep the focus also when user clicks any key on page but other buttons	
@@ -57,7 +57,7 @@ $(function () { //IIFE - Immediately Invoked Function Expression. It's a way to 
 	function swapButtonColors(selector, value){
 		$(selector).each(function(ind,element){
 			if ($(element).attr('id') !== value.attr('id')){
-				$(element).css('background-color', '#008B8B');
+				$(element).css('background-color', '#fff099');
 			}
 		});
 	}
@@ -73,7 +73,7 @@ $(function () { //IIFE - Immediately Invoked Function Expression. It's a way to 
 	function focusButtons(classSelector, btn){
 		$(classSelector).each(function(index,element){			
 			if($(element).attr('id').includes(btn.attr('id')) && $(element).css('visibility') === 'visible'){				
-				btn.css('background-color', '#00CED1');				
+				btn.css('background-color', '#ffdd1a');				
 			}
 		});		
 	}

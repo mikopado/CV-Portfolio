@@ -3,7 +3,10 @@ body {
 	letter-spacing: 1.5px;
 	color: #fff;
 }
-
+#work, #education, #my-projects, #last-page, #about, #home{
+	width: 100%;
+	height: 100vh;	
+}
 /***********************************
 			HEADER
 
@@ -14,15 +17,16 @@ body {
 	opacity: .9;
 	border-width: 0px;    
 	transition: all 2s ease-in-out;
-	-webkit-transition: all 2s ease-in-out;    
-}
-div.navbar-header{
+	-webkit-transition: all 2s ease-in-out;  
+	height:	10vh; 
 	display: flex;
-	align-items: baseline;
+	align-items: center; 
 }
-header div.container-fluid{	
-	margin-right: 50px;
+header div.container{	
+	margin: 0px;
+	width: 100%;
 }
+
 /*Menu of navigation bar and list of elements*/
 #nav-list > li > a, #nav-list > li > a:focus {
     color:#fff; 	
@@ -67,11 +71,9 @@ header div.container-fluid{
 	top: 300px;
 }
 /*Whole page -- set background image*/
-#home{
-    width: 100%;
-    height: 100vh;
+#home{    
     background: url('../images/my-desk-background-image.JPG') no-repeat;    
-    background-size: cover;
+    background-size: cover;	
 }
 /*Positioning the Arrow at bottom of main page*/
 #home div.text-center{
@@ -88,13 +90,13 @@ header div.container-fluid{
 *********************************/
 /*Set the text color to black*/
 #about {
-	color: #000;	
+	color: #000;			
 }
 /*Title of Sessions: About me, Work Experience, Education, My Projects, contact me*/
 h2 {
-	margin-bottom: 0px;
-	margin-top: 100px;
-	color: #000;	
+	margin-bottom: 0px;	
+	color: #000;
+	margin-top: 13vh;	
 }
 /*Line under Title of sessions*/
 hr {
@@ -107,7 +109,7 @@ hr {
 #description-about {
 	word-spacing: 1px;
 	text-align: justify;	
-	line-height: 240%;	
+	line-height: 200%;		
 }
 /*Splitting the text in two*/
 #description-about section p:nth-child(1)  {
@@ -115,8 +117,7 @@ hr {
 }
 /*Row that includes text and photo*/
 #about div.row div.row {
-	margin-top: 100px;
-	margin-bottom: 50px;	
+	margin-top: 10vh;		
 } 
 #my-photo{
 	margin-top: 10px;
@@ -141,7 +142,7 @@ hr {
 	color: black;	
 	padding: 20px;
 	border-radius: 2%;
-	background-color: #AFEEEE;
+	background-color: #ffe033;	
 	line-height: 220%;	
 	text-align: justify;
 	position: absolute;
@@ -161,26 +162,22 @@ hr {
 	font-style: italic;
 }
 /*Whole box which contains buttons and paragraphs*/
-#work div.row div.row, #education div.row.row {
-	margin-top: 70px;
-	margin-bottom: 50px;
-} 
-#education h2{
-	margin-top: 30px;
+#work div.row div.row, #education div.row div.row {
+	margin-top: 10vh;	
 }
 /*Education and work Buttons on the left side*/
 .edu-btn, .work-btn{
 	width: 100%;
 	height: 80px;
 	margin-bottom: 40px;
-	background-color: #008B8B;
     border: none;   
-    box-shadow: 5px 5px 2px #888888; 
-    color: white;
+    box-shadow: 5px 5px 2px #888888;     
+}
+.edu-btn:last-child, .work-btn:last-child{
+	margin-bottom: 0px;
 }
 /*Modifying default behaviour of buttons for hovering and focusing*/
-.edu-btn:hover, .work-btn:hover, .edu-btn:focus, .work-btn:focus{
-	color: white;
+.edu-btn:hover, .work-btn:hover, .edu-btn:focus, .work-btn:focus{	
 	border-color: transparent;
 	outline: none!important;
 }
@@ -189,18 +186,25 @@ hr {
 
 *********************************/
 /*Giving space between title of section and content*/
-#my-projects div.row div.row{
-	margin-top: 100px;	
+#row-1{
+	margin-top: 10vh;
+	margin-bottom: 5vh;		
+}
+
+#row-1, #row-2{
+	width: 100%;
+	height: 30vh;
 }
 /*Giving space between the two rows of project frames*/
-#my-projects div.row{
-	margin-bottom:50px;
-}
+/*#project{	
+	width: 100%;
+	height: 100vh;
+}*/
 /*Set size for project image frames*/
-#my-projects button{
+/*#my-projects button{
 	width: 100%;
 	height: 100%;
-}
+}*/
 #my-projects a{
 	text-decoration: none;	 
 }
@@ -211,7 +215,7 @@ hr {
 /*Styling the project image frames and positioning them in the row using Flexbox*/
 #my-projects div.col-xs-12{
 	border: .5px solid gray;	
-	height: 250px;
+	height: 30vh;
 	background-size: 100% 100%;
 	display: flex;
 	color: transparent;	
@@ -240,6 +244,7 @@ hr {
 	transition: all 1s ease-in-out;
 	font-size: 1.5em;
 }
+
 /*Background images for project frames*/
 #web{
 	background: url('../images/Web-apps.jpg');
@@ -261,14 +266,17 @@ hr {
 #contact {	
 	background: url("../images/gray-background.jpg") no-repeat; 	
     background-size: cover;
+	width: 100%;
+	height: 80vh;
 }
+
 /*Contact Me text*/
 div#contact-title h2 {
 	color: #fff;
 }
 /*Entire page except title*/
 #contact-content {
-	margin-top: 120px;	
+	margin-top: 10vh;	
 	margin-right: 0px;
 }
 /*Contact info text*/
@@ -352,7 +360,7 @@ footer > div.text-center {
 	#logonav:hover {
 		font-size: 1.1em;
 	}
-	header div.container-fluid{				
+	header div.container{				
 		margin-right: 10px;
 	}	
 	/*HOME PAGE	*/
@@ -397,8 +405,14 @@ footer > div.text-center {
 		letter-spacing: 1px;
 		word-spacing: .2px;
 	}
+	#work, #education, #my-projects, #last-page, #about, #contact, #row-1, #row-2{	
+		height: inherit;	
+	}
+	#row-2{
+		margin-bottom: 50px;
+	}
     /*HEADER */
-	header div.container-fluid{
+	header div.container{
 		margin-left: 0px;
 		margin-right: 0px;
 	}
@@ -425,7 +439,8 @@ footer > div.text-center {
 	nav.navbar.navbar-inverse.navbar-fixed-top {
 		background-color: #1a1a1a;	
 		opacity: 1.0;
-        margin-bottom: 0px;        
+        margin-bottom: 0px;  
+		height: inherit;      
 	}	
     #nav-list > li > a:hover{
         background-color: gray;        
@@ -437,9 +452,7 @@ footer > div.text-center {
     #home article {
         font-size: 1em;
     }
-    #home{
-		width: 100%;
-		height: 100vh;
+    #home{		
 		background: url('../images/my-desk-background-image-min.jpg') no-repeat;    
 		background-size: 100% 100%;
 	}

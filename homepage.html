@@ -18,9 +18,9 @@
    <!-- 	HEADER - NAVIGATION BAR -->
 	<header>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">   
+		<div class="container">   
 			<div class="row">  
-				<div class="col-sm-offset-1 col-sm-11"> 	
+				<div class="col-sm-offset-1 col-sm-10"> 	
 				<div class="navbar-header">
 				<a id="logonav" href="#home" class="navbar-brand navbar-text col-sm-1"><span>&lt;&#47;&gt;<span id="initials">ME</span></span></a>
 			<!--Code to handle the nav-bar and make it collapsable for small size. Taken from Bootstrap framework-->
@@ -146,8 +146,8 @@
 					<p class="year">Jan 2017 - Present</p><p class="headline"><strong>Higher Diploma in Computing</strong> at Dublin Institute of Technology, Dublin, Ireland</p>
 						<p>The course includes two semesters and six months of internship. Modules already attended: Architecture, Operating System and Networks, System analysis and testing,
 						Object-oriented programming, Web and User Interface design, Information system. Programming languages and technologies used: Python, JavaScript, HTML5, CSS3, SQL.</p>
-						<p class="year">Oct 2016 - Present</p><p class="headline"><strong>Full Stack Web Development Certification</strong> at Free Code Camp</p>
-						<p>Online course for web development. Includes Front-end, back-end, data visualization and full stack certifications. I am about to terminate the front-end certification.
+						<p class="year">Oct 2016 - Jun 2017</p><p class="headline"><strong>Front End Development Certification</strong> at Free Code Camp</p>
+						<p>Online course for web development. Includes Front-end, back-end, data visualization and full stack certifications. I have succesfully completed and gained the front-end certification.
 						Programming languages and technologies used: HTML5, CSS3, JavaScript, JQuery, Bootstrap.											
 						</p>
 				</section>
@@ -182,9 +182,9 @@
 </div> <!-- End of Education Session -->
 <!--PROJECTS SESSION-->
 <div id="my-projects" class="container-fluid">
-	<div class="row">
+	<div id="proj-wrapper" class="row">
 	<div class="col-xs-offset-1 col-xs-10"><h2>My Projects</h2><hr>
-		<div class="row">
+		<div id="row-1" class="row">
 			<a href="webapps.html" title="web apps">
 			<div id="web" class="col-xs-12 col-md-offset-2 col-md-4 col-sm-offset-1 col-sm-5"><section><i class="devicon-html5-plain-wordmark colored"></i>
 				<i class="devicon-css3-plain-wordmark colored"></i><i class="devicon-javascript-plain colored"></i></section>
@@ -197,7 +197,7 @@
 				</div>
 			</a>
 		</div> 
-		<div class="row">
+		<div id="row-2" class="row">
 			<a href="csharp.html" title="c# apps"><div id="csharp" class="col-xs-12 col-md-offset-2 col-md-4 col-sm-offset-1 col-sm-5">
 				<i class="devicon-csharp-plain colored"></i><span>C# Apps</span>			
 			</div>
@@ -211,6 +211,7 @@
 	</div>
 </div> <!-- End of Projects Session -->
 <!-- CONTACT ME SESSION -->
+<div id="last-page">
 <div id="contact" class="container-fluid">
 	<div class="row">
 		<div class="col-xs-offset-1 col-xs-10 col-xs-offset-1">
@@ -257,19 +258,20 @@
 	<!--Social links-->
 	<div class="text-center">
 		<a id="linkedin" class="edit-buttons" href="https://ie.linkedin.com/in/micheleercolino" target="_blank" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
-		    <span class="fa fa-linkedin-square fa-2x"></span>
+		    <span class="fa fa-linkedin-square fa-3x"></span>
 		</a>
 		<a id="github" class="edit-buttons" href="https://github.com/mikopado" target="_blank" data-toggle="tooltip"  data-placement="bottom" title="GitHub">
-		    <span class="fa fa-github-square fa-2x"></span>
+		    <span class="fa fa-github-square fa-3x"></span>
 		</a>
 		<a id="codepen" class="edit-buttons" href="http://codepen.io/mikopado/#" target="_blank" data-toggle="tooltip" data-placement="bottom" title="CodePen">
-        <span class="fa fa-codepen fa-2x"></span></a>
+        <span class="fa fa-codepen fa-3x"></span></a>
 	</div>
 	<!--Actual footer-->
 	<div class="panel-footer">
 		<p class="text-center">Written and Coded by <span class="text-primary">Michele Ercolino</span></p>
 	</div>
 </footer>
+</div>
 	<!--JQuery script-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>

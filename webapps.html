@@ -17,9 +17,9 @@
 <!-- 	HEADER - NAVIGATION BAR -->
 	<header>
 		<nav class="navbar navbar-inverse navbar-top">
-		<div class="container-fluid">   
+		<div class="container">   
 			<div class="row">  
-				<div class="col-sm-offset-1 col-sm-11"> 	
+				<div class="col-sm-offset-1 col-sm-10"> 	
 				<div class="navbar-header">
 				<a id="logonav" href="homepage.html#home" class="navbar-brand navbar-text col-sm-1"><span>&lt;&#47;&gt;<span id="initials">ME</span></span></a>
 			<!--Code to handle the nav-bar and make it collapsable for small size. Taken from Bootstrap framework-->
@@ -32,8 +32,8 @@
 				</div> <!-- End of navbar header -->
 				<div class="collapse navbar-collapse" id="menu-collapse">
 					<ul id="nav-list" class="nav navbar-nav navbar-right">
-						<li class="navbar-text text-center"><a href="homepage.html#home">Home</a></li>
-						<li class="navbar-text text-center"><a href="homepage.html#my-projects">Projects</a></li>
+						<li class="navbar-text text-center"><a href="homepage.html#home">Home</a></li>						
+						<li class="navbar-text text-center"><a href="webapps.html">Web Apps</a></li>
 						<li class="navbar-text text-center"><a href="python.html">Python Apps</a></li>
 						<li class="navbar-text text-center"><a href="csharp.html">C# Apps</a></li>
 						<li class="navbar-text text-center"><a href="mobile.html">Mobile Apps</a></li>
@@ -48,7 +48,28 @@
 <!--MAIN WEBAPPS PAGE-->
     <div id="webapps" class="container-fluid">
         <div class="row">
-        <div class="col-xs-offset-1 col-xs-10 col-xs-offset-1"><h1>Web Apps</h1><hr>	    
+        <div class="col-xs-offset-1 col-xs-10 col-xs-offset-1"><h1>Web Apps</h1><hr>
+		<!--Simon Game	    -->
+		<div class="row">
+            <div class="col-xs-12 col-sm-5"><iframe name="simon" src="https://mikopado.github.io/Free-Code-Camp-Challenges/SimonGame/"></iframe><section>
+				<button class="btn btn-info" onclick="window.open('https://codepen.io/mikopado/pen/dRpWzz')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button>
+				<button id="simon" class="btn btn-info open-btn"><i class="fa fa-window-maximize" aria-hidden="true"></i>Open App</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-6"><p>Simon Game. Try to guess the serie of twenty buttons shown. If user is wrong it will start over. User can choose to play in strict mode that allows to change the serie every time user makes mistake. App developed for Free Code Camp Challenges.</p></div>
+	    </div>
+		<!--Tic Tac Toe Game -->
+		<div class="row">
+            <div class="col-xs-12 col-sm-5"><iframe name="tictac" src="https://mikopado.github.io/Free-Code-Camp-Challenges/TicTacToeWebGame/"></iframe><section>
+				<button class="btn btn-info" onclick="window.open('https://codepen.io/mikopado/pen/GEKezL')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button>
+				<button id="tictac" class="btn btn-info open-btn"><i class="fa fa-window-maximize" aria-hidden="true"></i>Open App</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-6"><p>Typical Tic Tac Toe game developed in JQuery. User can choose the mark which wants to start and then good luck! App developed for Free Code Camp Challenges.</p></div>
+	    </div>
+		<!--Twitch.tv JSON API-->
+		<div class="row">
+            <div class="col-xs-12 col-sm-5"><iframe name="twitch" src="https://mikopado.github.io/Free-Code-Camp-Challenges/Twitch-tv/"></iframe><section>
+				<button class="btn btn-info" onclick="window.open('https://codepen.io/mikopado/pen/RgVdYL')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button>
+				<button id="twitch" class="btn btn-info open-btn"><i class="fa fa-window-maximize" aria-hidden="true"></i>Open App</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-6"><p>Twitch-tv JSON API is application which allows to connect to twitch.tv user accounts and directly watch the stream of the online users. Only a list of few users is shown. Using twitch.tv API to retrieve info of users and streams. App developed for Free Code Camp Challenges.</p></div>
+	    </div>
         <!--Wikipedia Viewer-->
 		<div class="row">
             <div class="col-xs-12 col-sm-5"><iframe name="wiki" src="https://mikopado.github.io/Free-Code-Camp-Challenges/WikipediaViewer/"></iframe><section>
