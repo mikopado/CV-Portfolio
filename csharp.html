@@ -19,7 +19,7 @@
 		<nav class="navbar navbar-inverse navbar-top">
 		<div class="container">   
 			<div class="row">  
-				<div class="col-sm-offset-1 col-sm-10"> 	
+				<div class="col-sm-offset-1 col-sm-11"> 	
 				<div class="navbar-header">
 				<a id="logonav" href="homepage.html#home" class="navbar-brand navbar-text col-sm-1"><span>&lt;&#47;&gt;<span id="initials">ME</span></span></a>
 			<!--Code to handle the nav-bar and make it collapsable for small size. Taken from Bootstrap framework-->
@@ -32,11 +32,12 @@
 				</div> <!-- End of navbar header -->
 				<div class="collapse navbar-collapse" id="menu-collapse">
 					<ul id="nav-list" class="nav navbar-nav navbar-right">
-						<li class="navbar-text text-center"><a href="homepage.html#home">Home</a></li>						
-						<li class="navbar-text text-center"><a href="webapps.html">Web Apps</a></li>
-						<li class="navbar-text text-center"><a href="python.html">Python Apps</a></li>
-						<li class="navbar-text text-center"><a href="csharp.html">C# Apps</a></li>
-						<li class="navbar-text text-center"><a href="mobile.html">Mobile Apps</a></li>
+						<li class="navbar-text text-center"><a href="homepage.html#home">Home</a></li>	
+						<li class="navbar-text text-center"><a href="csharp.html">.NET</a></li>		
+						<li class="navbar-text text-center"><a href="java.html">Java</a></li>			
+						<li class="navbar-text text-center"><a href="webapps.html">Front-End</a></li>
+						<li class="navbar-text text-center"><a href="python.html">Python</a></li>						
+						<li class="navbar-text text-center"><a href="mobile.html">Android</a></li>						
 						<li class="navbar-text text-center"><a href="homepage.html#contact">Contacts</a></li>
 					</ul>
 				</div>  <!--End code from Bootstrap          	-->   
@@ -48,19 +49,33 @@
 <!--C Sharp apps main page-->
     <div id="csharp" class="container-fluid">
         <div class="row">
-        <div class="col-xs-offset-1 col-xs-10 col-xs-offset-1"><h1>C# Apps</h1><hr>	    
+        <div class="col-xs-offset-1 col-xs-10 col-xs-offset-1"><h1>.NET Apps</h1><hr>
+        <!-- Sportsbar app	  -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 text-center"><div class="app-img" style="background: url('images/sportsbar.jpg') no-repeat; background-size: 100% 100%;"></div><section>
+				<button class="btn btn-info" onclick="window.open('https://github.com/mikopado/sportsbar')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button>
+				<button class="btn btn-info open-btn" onclick="window.open('http://sportsbar.apphb.com/')"><i class="fa fa-window-maximize" aria-hidden="true"></i>Open App</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-8"><p>SportsBar. A social network for sports fans. You can create your own profile, upload posts and comments and build your own network of friends as well as filtering posts based on favourite topics (e.g. team, sport). Application developed using ASP.NET MVC. You can view the code on GitHub or open the app deployed on AppHarbor.</p></div>
+	    </div> 
+	    <!-- SkiHill app	  -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 text-center"><div class="app-img" style="background: url('images/skihill.jpg') no-repeat; background-size: 100% 100%;"></div><section>
+				<button class="btn btn-info" onclick="window.open('https://github.com/mikopado/SkiHill')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button>
+				<button class="btn btn-info open-btn" onclick="window.open('http://skihill.apphb.com/')"><i class="fa fa-window-maximize" aria-hidden="true"></i>Open App</button></section></div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-8"><p>SkiHill. A simple ski products store web app. The application includes also an example of WCF services and REST API. Application developed using ASP.NET MVC. You can view the code on GitHub or open the app deployed on AppHarbor.</p></div>
+	    </div>   
         <!--Geophy app-->
 		<div class="row">
-            <div class="col-xs-12 col-sm-3 col-md-2 text-center"><div class="app-img" style="background: url('images/geophy.jpg') no-repeat; background-size: 100% 100%;"></div><section>
+            <div class="col-xs-12 col-sm-3 text-center"><div class="app-img" style="background: url('images/geophy.jpg') no-repeat; background-size: 100% 100%;"></div><section>
 				<button class="btn btn-info" onclick="window.open('https://github.com/mikopado/GeoPhy-data-converter-tool/tree/master/GeoPhyGPS')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button></section></div>
-            <div class="col-xs-12 col-sm-offset-1 col-sm-8 col-md-offset-2 col-md-8"><p>GeoPhy data converter tool. App which converts 
+            <div class="col-xs-12 col-sm-offset-1 col-sm-8"><p>GeoPhy data converter tool. App which converts 
 				GPS data acquired for 2D Resistivity and Seismic Refraction surveys to a cleaner and tidier structure ready to be exported in excel files or AutoCAD file. App developed to improve and simplify data collection for the mentioned geophysical surveys.</p></div>
 	    </div>
 		<!--OOP-Assignment-->
         <div class="row">
-            <div class="col-xs-12 col-sm-3 col-md-2 text-center"><div class="app-img" style="background: url('images/oop-assignment.jpg') no-repeat; background-size: 100% 100%;"></div><section>
+            <div class="col-xs-12 col-sm-3 text-center"><div class="app-img" style="background: url('images/oop-assignment.jpg') no-repeat; background-size: 100% 100%;"></div><section>
 				<button class="btn btn-info" onclick="window.open('https://github.com/mikopado/OOP-Assignment/tree/master/OOPAssignment/OOPAssignment')"><i class="fa fa-code" aria-hidden="true"></i>View Code</button></section></div>
-            <div class="col-xs-12 col-sm-offset-1 col-sm-8 col-md-offset-2 col-md-8"><p>App that allows to collect data for a college, 
+            <div class="col-xs-12 col-sm-offset-1 col-sm-8"><p>App that allows to collect data for a college, 
 				inputting students and lecturers information in a sort of a database. Using GUI with WinForm. App developed in object-oriented programming modules for Certificate in Programming.</p></div>
 	    </div>           
         </div>

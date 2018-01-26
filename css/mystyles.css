@@ -185,16 +185,6 @@ hr {
 		MY PROJECTS SESSION
 
 *********************************/
-/*Giving space between title of section and content*/
-#row-1{
-	margin-top: 10vh;
-	margin-bottom: 5vh;		
-}
-
-#row-1, #row-2{
-	width: 100%;
-	height: 30vh;
-}
 
 #my-projects a{
 	text-decoration: none;	 
@@ -203,10 +193,20 @@ hr {
 #my-projects a > div{
 	box-shadow: 10px 10px 5px #888888;
 }
+/*Using grid layout to display the projects frames by rows and columns*/
+#my-projects{
+	display: grid;
+	grid-gap: 80px;    
+    grid-template-rows: repeat(2, 250px);    
+    grid-template-columns: repeat(3, 280px);
+    margin-top: 10vh;
+	margin-bottom: 5vh;	    
+}
+
 /*Styling the project image frames and positioning them in the row using Flexbox*/
-#my-projects div.col-xs-12{
+#my-projects div{
 	border: .5px solid gray;	
-	height: 30vh;
+	height: 100%;
 	background-size: 100% 100%;
 	display: flex;
 	color: transparent;	
@@ -217,6 +217,9 @@ hr {
 #my-projects i, #my-projects img{
 	font-size: 1.3vw;
 	margin-top: 10px;
+}
+#java i{
+	font-size: 2vw;
 }
 /*Using Flexbox to position the icons and the project name inside the image frame*/
 #my-projects section{
@@ -229,7 +232,7 @@ hr {
 	font-weight: bold;
 }
 /*Making the image frame a bit darker and pop up the project name when hovering the image*/
-#my-projects div.col-xs-12:hover{
+#my-projects div:hover{
 	filter: brightness(80%);
 	color: white;
 	transition: all 1s ease-in-out;
@@ -239,15 +242,22 @@ hr {
 /*Background images for project frames*/
 #web{
 	background: url('../images/Web-apps.jpg');
+	
 }
 #python {
 	background: url('../images/python.jpg');
+
 }
 #csharp{
-	background: url('../images/csharp.jpg');
+	background: url('../images/dot-net.png');
+	
 }
 #mobile{
 	background: url('../images/mobile-apps.jpg');	
+	
+}
+#java{
+	background: url('../images/java.jpg');
 }
 /***********************************
 		CONTACT ME SESSION
@@ -379,6 +389,9 @@ footer > div.text-center {
 	.work-sections, .edu-sections{
 		line-height: 130%;		
 	}
+	#work div.row div.row, #education div.row div.row{
+		margin-bottom: 10vh;
+	}
 	/*CONTACT SESSION*/
 	#email-address, .phone-number{
 		font-size: .9em;
@@ -392,6 +405,12 @@ footer > div.text-center {
 	}
 	#row-2{
 		margin-bottom: 50px;
+	}
+	/*PROJECTS*/
+	#my-projects{
+	    grid-template-columns: repeat(2, 250px);
+	    grid-template-rows: repeat(3, 250px);
+	    
 	}
 }
 /*VERY SMALL SCREEN (MOBILE SIZE)*/
@@ -477,16 +496,13 @@ footer > div.text-center {
 		padding: 0px;
 	}
 	/*PROJECTS*/
-	div#web{
-		margin-top: 80px;
-		margin-bottom: 50px;
+	#my-projects{			  
+	    grid-template-rows: repeat(5, 250px);    
+	    grid-template-columns: repeat(1, 250px);
+	    margin-bottom: 20vh;
+	    justify-content: center;
 	}
-	#my-projects div.row div.row{
-		margin-top: 50px;
-	}
-	div#csharp{
-		margin-bottom: 50px;
-	}
+	
 	#my-projects i{
 		font-size: 5vw;
 	}		
